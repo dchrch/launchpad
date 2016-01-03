@@ -51,3 +51,7 @@ a:hover {
 .navbar-default .navbar-brand:hover {
   color: #0080C3;
 }
+
+p {
+  white-space: pre-wrap;
+}
