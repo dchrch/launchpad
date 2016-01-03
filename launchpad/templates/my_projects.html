@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% set active_page = "my_projects" %}
+
+{% block subtitle %}
+  Profile
+{% endblock %}
+
+{% block content %}
+  {% set manage = True %}
+  <div class="panel">
+    <h1 class="text-center"> My Projects</h1>
+  </div>
+
+  {% include '_projects.html' %}
+
+{% endblock %}

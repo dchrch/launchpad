@@ -1,0 +1,1 @@
+web: gunicorn launchpad:app && python manage.py db upgrade

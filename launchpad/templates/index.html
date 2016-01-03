@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% set active_page = "index" %}
+
+{% block subtitle %}
+  Crowdfunding For Apps
+{% endblock %}
+
+{% block content %}
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <h1>Crowdfunding For Apps</h1>
+    <p>Launchpad is a crowdfunding platform for apps that turns dreams into reality.</p>
+  </div>
+
+  <h2> New Projects </h2>
+  {% include '_projects.html' %}
+
+  
+{% endblock content %}

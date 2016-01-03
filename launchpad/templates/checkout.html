@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+  <form action="{{ url_for('charge', project_id=project_id, amount=amount) }}" method="POST">
+  <input type="hidden" name="amount" value="{{ amount }}">
+    <article>
+      <label>
+        <span>Amount is ${{ amount }}.00</span>
+      </label>
+    </article>
+    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="{{ key }}"
+            data-description="Project Pledge"
+            data-amount="{{ amount }}00"
+            data-locale="auto"></script>
+  </form>
+  <p>Stripe payment is running in test mode.  Use fake credit card number 4242424242424242 for testing purposes.  Real card numbers will not work.</p>
+{% endblock %}
